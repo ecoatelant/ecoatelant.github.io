@@ -1,4 +1,6 @@
 body {
     font: "Oswald";
     background-image: url("../img/background-first.gif");
+    background-size:100%;
+    
 }
