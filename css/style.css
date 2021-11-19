@@ -1,6 +1,10 @@
 body {
     font: "Oswald";
+}
+
+header {
     background-image: url("../img/background-first.gif");
     background-size:100%;
-    
+    background-repeat;
 }
+
