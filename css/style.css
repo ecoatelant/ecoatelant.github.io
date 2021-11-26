@@ -1,8 +1,12 @@
 body {
     font: "Oswald";
+    margin: 0;
+    padding:0;
 }
 
-#background-first {
-    width: 100%;
-
+header {
+    background-image: url("../img/background-first.gif");
+    background-size:100%;
+    
 }
+
