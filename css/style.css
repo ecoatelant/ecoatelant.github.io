@@ -2,11 +2,36 @@ body {
     font: "Oswald";
     margin: 0;
     padding:0;
+    text-align: center;
 }
 
 header {
-    background-image: url("../img/background-first.gif");
+    /*background-image: url("../img/background-first.gif");*/
     background-size:100%;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
 }
 
+#header-center {
+    width: 70%;
+}
+
+#header-center ul {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+* { 
+    text-decoration: none;
+    font-family: "Archia", sans-serif;
+}
+
+section {
+    text-align: center;
+    background: #000344;
+    color: #fff;
+}
