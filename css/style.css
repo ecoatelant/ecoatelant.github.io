@@ -20,6 +20,7 @@ section {
 }
 
 header {
+  z-index: 100;
   position: absolute;
   width: 100%;
   box-sizing: border-box;
@@ -136,6 +137,9 @@ header .header-inner nav ul {
 #about img {
   width: 75%;
 }
+#about #about_text {
+  cursor: pointer;
+}
 
 .scroll-to-top {
   position: fixed;
@@ -184,6 +188,7 @@ header .header-inner nav ul {
   border-radius: 0.5rem;
   transition: flex 250ms ease-in-out;
   position: relative;
+  cursor: pointer;
 }
 #portfolio .nav-projects .right .item h3 {
   margin: 0;
@@ -197,10 +202,20 @@ header .header-inner nav ul {
 }
 #portfolio .view-project {
   background-color: #f0f0f0;
+  border-radius: 0.5rem;
   display: flex;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+  padding: 2rem;
 }
 #portfolio .view-project * {
   flex: 50%;
+}
+#portfolio .view-project .description {
+  height: fit-content;
+  font-size: 2rem;
+  margin-left: 2rem;
 }
 #portfolio .view-project .capture img {
   width: 100%;

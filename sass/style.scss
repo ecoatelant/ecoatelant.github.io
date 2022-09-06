@@ -30,6 +30,7 @@ section {
 }
 
 header {
+    z-index:100;
     position: absolute;
     width:100%;
     box-sizing: border-box;
@@ -144,7 +145,11 @@ header {
 
     img {
         width: 75%;
-    } 
+    }
+
+    #about_text {
+        cursor: pointer;
+    }
 
 }
 
@@ -197,6 +202,7 @@ header {
                 border-radius: .5rem;
                 transition: flex 250ms ease-in-out;
                 position: relative;
+                cursor: pointer;
 
                 h3 {
                     margin: 0;
@@ -216,10 +222,21 @@ header {
 
     .view-project {
         background-color: #f0f0f0;
+        border-radius: .5rem;
         display: flex;
+        align-items: center;
+        height: 100%;
+        margin: auto;
+        padding: 2rem;
 
         *{
             flex: 50%;
+        }
+
+        .description {
+            height: fit-content;
+            font-size: 2rem;
+            margin-left: 2rem;
         }
         
         .capture {
