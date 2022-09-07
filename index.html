@@ -18,7 +18,6 @@
                 <nav>
                     <ul>
                         <li><a href="#about">à propos</a></li>
-                        <li><a href="#experiences">expériences</a></li>
                         <li><a href="#portfolio">réalisations</a></li>
                         <li><a href="#contact">contact</a></li>
                     </ul>
@@ -44,8 +43,37 @@
 
             </section>
 
-            <script>$(document).ready(function(){$("#about").load("about.html");});</script>
             <section id="about">
+                <div class="about-img">
+                    <img class="" src="img/about_img.jpeg"/>
+                </div>
+                <div class="about-description">
+                    <h2>Qui suis-je ?</h2>
+                    <div class="container">
+                        <div class="introduce-text">
+                            <br>Je suis <b>Emilie COATELANT</b>,  <b>développeuse et intégratrice web</b> à en devenir.
+                                Actuellement étudiante en <b>licence professionnelle de développement web et mobile</b> à l’IUT de Bobigny.
+                                <br/><br/>
+                                Je vise pour cette année scolaire 2022-2023 me former en <b>autodidacte</b> et <b>développer des projets</b> inscrits dans mes notes depuis plusieurs mois voire plusieurs années.
+                                <br/><br/>
+                                J’aspire à devenir <b>développeuse fullstack</b>, car les technologies du back comme du front m’attire énormément. 
+                            </p>
+                        </div>
+                        <a href="media/CV.pdf">
+                            <div class="resume">
+                                Découvrir mon CV
+                            </div>
+                        </a>
+                        <div class="skills">
+                                <img src="/img/logo_html.png">
+                                <img src="/img/logo_css3.png">
+                                <img src="/img/logo_jquery.png">
+                                <img src="/img/logo_php.svg" alt="" height="auto" width="auto" />
+                                <img src="/img/logo_mysql.png">
+                                <img src="/img/logo_wordpress.png">
+                        </div>
+                    </div>    
+                </div>
             </section>
 
             <section id="portfolio">
@@ -59,13 +87,13 @@
                         </h2>
                     </div>
                     <div class="right">
-                        <div class="item" style="background-image: url('/img/background_pot2colle.jpeg')">
+                        <div class="item pot2colle" style="background-image: url('/img/background_pot2colle.jpeg')">
                             <h3>Pot2Colle</h3>
                         </div>
                         <div class="item vegandco" style="background-image: url('/img/background_vegandco.jpg')">
                             <h3>Veg & Co'</h3>
                         </div>
-                        <div class="item" style="background-image: url('/img/background_schoolapps.jpg')">
+                        <div class="item schoolapps" style="background-image: url('/img/background_schoolapps.jpg')">
                             <h3>SchoolAPPS</h3>
                         </div>
                     </div>
@@ -75,9 +103,25 @@
                         <p>sélectionner un projet pour en avoir un bref aperçu</p>
                     </div>
                     <div class="capture">
-                        <img src="/img/vegandco.png">
+                        <img class="capture-project" src="/img/vegandco.png">
                     </div>
                 </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <div class="container">
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/emilie-coatelant/">
+                            <img src="/img/logo_linkedin.png">
+                        </a>
+                        <a href="https://github.com/ecoatelant">
+                            <img src="/img/logo_github.png">
+                        </a>
+                    </div>
+                </div>
+                <a href="mailto:emiliecoatelant@outlook.fr">emiliecoatelant@outlook.fr</a>
+                <p>Copyright ©2022 - All rights reserved</p>
             </section>
             
 

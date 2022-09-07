@@ -68,15 +68,17 @@ header {
     align-items: center;
     color: #ffff;
 
+    #texte_presentation {
+        text-align: left;
+    }
+
     &>div {
         flex: 1 1 40%;
         margin: 5%;
     }
 }
 
-#texte_presentation {
-    text-align: left;
-}
+
 
 .title {
     font-size: 5rem;
@@ -129,6 +131,7 @@ header {
     display: flex;
     // justify-content: space-around;
     color: black;
+    background-color: white;
 
     &>div {
         margin: 2rem;
@@ -166,7 +169,7 @@ header {
 
             .skills{
                 img {
-                max-width: 80px;
+                
                 height: 80px;
                 margin: .25rem;
                 }
@@ -180,6 +183,7 @@ header {
 @media screen and (max-width:$max-tab) {
     #about{
         flex-direction: column;
+
         .about-img{
             margin: 1rem;
             &>img{
@@ -215,9 +219,10 @@ header {
     position: fixed;
     bottom: 1em;
     right: 1em;
-
+    mix-blend-mode: difference;
     svg {
         width: 100px;
+        mix-blend-mode: difference;
     }
 }
 
@@ -280,12 +285,15 @@ header {
 
     .view-project {
         background-color: #f0f0f0;
+        // background-color: #1b1b1b;
         border-radius: .5rem;
         display: flex;
         align-items: center;
         height: 100%;
         margin: auto;
         padding: 2rem;
+        box-sizing: border-box;
+        overflow: hidden;
 
         *{
             flex: 50%;
@@ -293,13 +301,58 @@ header {
 
         .description {
             height: fit-content;
-            font-size: 2rem;
+            font-size: 1rem;
             margin-left: 2rem;
+            position: relative;
+            height: 100%;
+
+            .project-selected{
+                .date{
+                    font-style: italic;
+                }
+                .details{
+                    width: 80%;
+                }
+                .role{
+                    display: flex;
+                    width: 50%;
+                    p{
+                        width: fit-content;
+                        &.role-title{
+                            font-weight: 800;
+                        }
+                    }
+                }
+                .links{
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    padding-right: 25px;
+                    box-sizing: border-box;
+                    .fonctionnal-link{
+                        background-color: white;
+                        width: 100%;
+                        padding: 2rem;
+                        border-radius: 25px;
+                    }
+                    img{
+                        // position: absolute;
+                        // right: 25px;
+                        // bottom: 25px;
+                        height: 64px;
+                        float: right;
+                    }
+                }
+            }
         }
         
         .capture {
+            max-height: 100%;
             img {
-                width: 100%;
+                max-width: 100%;
+                height: 100%;
             }
         }
     }
@@ -315,5 +368,31 @@ header {
         cursor: pointer;
     
     }
+
+}
+
+#contact{
+    background-color: black;
+    text-align: center;
+    padding: 2rem;
+    height: auto;
+    
+    h2{
+        font-size: 4rem;
+    }
+
+    .container{
+        margin: 2rem;
+        .social {
+            a {
+                margin: 2rem;
+                img {
+                    height: 64px;
+                }
+            }
+        }
+    }
+    
+    
 
 }
